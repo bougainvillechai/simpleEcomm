@@ -27,7 +27,7 @@ class home_page extends StatelessWidget {
                     left: 25.0, right: 25.0, top: 25.0, bottom: 0),
                 child: Image.asset(
                   "lib/crocs/name.png",
-                  height: 100,
+                  height: 60,
                 ),
               ), // Reduce the space between image and text
               // Title
@@ -53,7 +53,7 @@ class home_page extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                height: 100,
+                height: 150,
               ),
               //button
               GestureDetector(
