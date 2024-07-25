@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:simpleecommerce/models/shoeTileModel.dart';
 
 import '../components/shoe_tile.dart';
 
@@ -67,7 +68,14 @@ class _ShopPageState extends State<ShopPage> {
           height: 24,
         ),
         Expanded(child: ListView.builder(itemBuilder: (context, index) {
-          return ShoeTile();
+          shoe Shoe = shoe(
+              name: 'Croc Air Max',
+              price: "19 KD",
+              image_path: "lib/crocs/red.png",
+              desc: "The bull among comfortable shoes");
+          return ShoeTile(
+            Shoe: Shoe,
+          );
         }))
       ],
     );
